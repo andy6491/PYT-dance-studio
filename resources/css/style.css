@@ -129,13 +129,29 @@ ul a {
 /*footer index*/
 footer {
     background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');
+    height: 15rem;
+}
+
+footer .logo {
+
 }
 
 .social-media {
   /*text-align: center;*/
 }
 
+
+footer .copyright {
+  text-align: center;
+  font-size: .875rem;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
 /*faculty page*/
+/*jumbotron*/
 .faculty-jumbo {
   background-image: url('../../resources/pyt_dance_studio_resources/faculty-photo.png');
   background-position: center;
@@ -149,4 +165,14 @@ footer {
 
 .faculty-jumbo p {
   color: #999999;
+}
+
+/*faculty*/
+.faculty img, span, h3, p {
+  width: 16.875rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.faculty p {
+  line-height: 1.5;
 }
