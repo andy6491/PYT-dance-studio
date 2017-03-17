@@ -2,6 +2,7 @@
 
 html {
   font-size: 16px;
+  margin-top: 0;
 }
 
 /*navigation*/
@@ -94,10 +95,18 @@ ul a {
   margin-top: 0;
   height: 31.25rem;
   margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 3.875rem;
 }
 
 .backdrop1 {
   background-color: rgba(120, 73, 225, 0.9);
+  width: 25rem;
+  height: 20rem;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*fire*/
@@ -105,14 +114,22 @@ ul a {
   background-image: url('../../resources/pyt_dance_studio_resources/fire-photo.png');
   background-position: center;
   background-size: cover;
-  width: 100%;
+  width: auto;
   margin-top: 0;
   height: 31.25rem;
   margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 3.875rem;
 }
 
 .backdrop2 {
   background-color: rgba(173, 74, 226, 0.9);
+  width: 25rem;
+  height: 20rem;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /*jump*/
@@ -124,22 +141,37 @@ ul a {
   margin-top: 0;
   height: 31.25rem;
   margin-bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 3.875rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.paragraph {
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
 
 /*footer index*/
 footer {
-    background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');
-    height: 15rem;
-}
-
-footer .logo {
-
+  /*background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');*/
+  height: 3.125rem;
+  width: auto;
+  background-color: rgba(120, 73, 227, 0.9);
+  color:#ffffff;
+  font-size: .875rem;
 }
 
 .social-media {
   /*text-align: center;*/
+  height: 3.125rem;
 }
-
 
 footer .copyright {
   text-align: center;
@@ -148,6 +180,10 @@ footer .copyright {
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
+  height: 15rem;
+  width: auto;
+  /*background-color: rgba(120,73,227, 0.9)*/
+  background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');
 }
 
 /*faculty page*/
@@ -168,11 +204,120 @@ footer .copyright {
 }
 
 /*faculty*/
+.faculty {
+  margin-bottom: 11.25rem;
+}
+
 .faculty img, span, h3, p {
   width: 16.875rem;
   font-family: 'Open Sans', sans-serif;
 }
 
+.faculty h3 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #8a45ff;
+  margin-top: 1.25rem;
+}
+
+.faculty span {
+  padding-bottom: .625rem;
+  padding-top: .625rem;
+  font-size: 1.125rem;
+  height: .625rem;
+}
+
 .faculty p {
   line-height: 1.5;
+  margin-bottom: 6.25rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .faculty h3 {
+    font-size: 1.5rem;
+  }
+
+  .faculty span {
+    font-size: 1rem;
+  }
+
+  .faculty p {
+    font-size: .875rem;
+    line-height: 1.5;
+  }
+}
+
+/*classes*/
+/*jumbotron*/
+.classes-jumbo {
+  background-image: url('../../resources/pyt_dance_studio_resources/classes-photo.png');
+  background-position: center;
+  background-size: cover;
+  text-align: right;
+  border-bottom: 1rem solid rgba(174, 75, 227, 0.9);
+}
+
+.classes-jumbo h1 {
+  color: rgba(174, 75, 227, 0.9);
+}
+
+/*classes*/
+.classes h3 {
+    color: rgba(174, 75, 227, 0.9);
+}
+
+/*about*/
+/*jumbotron*/
+.about-jumbo {
+  background-image:   url('../../resources/pyt_dance_studio_resources/workout-photo.png');
+  background-position: center;
+  background-size: cover;
+  border-bottom: 10px solid #794ae2;
+}
+
+.about-jumbo h1 {
+  font-weight: bold;
+  font-size: 3.125rem;
+  color: #794ae2;
+}
+
+/*about section*/
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #794ae2;
+  margin-top: 4rem;
+}
+
+.about img {
+  height: 9.375rem;
+  margin-right: 5rem;
+}
+
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666666;
+  margin-bottom: 4rem;
+}
+
+/*map*/
+.map {
+  background-image: url('../../resources/pyt_dance_studio_resources/map.jpg');
+  height: 31.25rem;
+  width: auto;
+  padding-top: 3.875rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.directions {
+  background-color: rgba(120, 73, 225, 0.9);
+  height: 25rem;
+  width: 25rem;
 }
