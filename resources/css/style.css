@@ -186,6 +186,10 @@ footer .copyright {
   background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');
 }
 
+.icon {
+  /*width: 9.375rem;*/
+}
+
 /*faculty page*/
 /*jumbotron*/
 .faculty-jumbo {
