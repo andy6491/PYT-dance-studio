@@ -3,6 +3,7 @@
 html {
   font-size: 16px;
   margin-top: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /*navigation*/
@@ -86,6 +87,27 @@ ul a {
   margin-bottom: 3.125rem;
 }
 
+@media only screen and (max-width: 780px) {
+  h1 {
+    width: 31.25rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  h1 {
+    width: 18.5rem;
+    margin-top: 7.125rem;
+    margin-bottom: 1.625rem;
+    font-size: 1.875rem;
+  }
+
+  .jumbo-paragraph {
+    margin-bottom: 3.875rem;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
 /*graffiti*/
 .graffiti {
   background-image: url('../../resources/pyt_dance_studio_resources/graffiti-photo.png');
@@ -107,6 +129,8 @@ ul a {
   height: 20rem;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-top: 5rem;
+  margin-left: 3rem;
 }
 
 /*fire*/
@@ -130,6 +154,9 @@ ul a {
   height: 20rem;
   justify-content: flex-end;
   align-items: flex-end;
+  margin-top: 5rem;
+  margin-left: 3rem;
+
 }
 
 /*jump*/
@@ -147,7 +174,7 @@ ul a {
   padding-top: 3.875rem;
 }
 
-h2 {
+.main-h2 {
   font-size: 2.25rem;
   line-height: 1.2;
   font-weight: bold;
@@ -156,6 +183,52 @@ h2 {
 .paragraph {
   font-size: 1.125rem;
   line-height: 1.4;
+}
+/*mobile*/
+@media only screen and (max-width: 780px) {
+  .main-h2{
+    font-size: 1.875rem;
+    line-height: 1.4;
+    margin-bottom: .625rem;
+    margin-left: 1.875rem;
+  }
+
+  .paragraph {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-left: 1.875rem;
+    margin-right: 3.4375rem;
+  }
+
+  .graffiti, .fire, .jump {
+    margin-top: 1.875rem;
+  }
+
+  .backdrop1, .backdrop2 {
+    width: 100%;
+  }
+
+  strong {
+    margin-left: 1.875rem;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+  .main-h2{
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .backdrop1, .backdrop2 {
+    width: 100%;
+  }
+
+  .graffiti, .fire, .jump {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
 }
 
 /*footer index*/
@@ -188,6 +261,20 @@ footer .copyright {
 
 .icon {
   /*width: 9.375rem;*/
+}
+
+@media only screen and (max-width: 780) {
+  .social-media {
+    height: 2.5rem;
+  }
+
+  .copyright {
+    height: 8.75rem;
+  }
+
+  .footer-image {
+    display: none;
+  }
 }
 
 /*faculty page*/
@@ -324,4 +411,5 @@ footer .copyright {
   background-color: rgba(120, 73, 225, 0.9);
   height: 25rem;
   width: 25rem;
+  text-align: left;
 }
