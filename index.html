@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
     <!--navigation-->
@@ -13,7 +14,7 @@
       <div class="container-fluid" role="presentation">
         <img src="resources/pyt_dance_studio_resources/logo-color.png" alt="PYT logo" />
         <img src="resources/pyt_dance_studio_resources/logo-mobile.png" class="mobile" alt="PYT logo" />
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right collapse navbar-collapse">
           <li><a href="about.html">About</a></li>
           <li><a href="classes.html">Classes</a></li>
           <li><a href="faculty.html">Faculty</a></li>
@@ -21,31 +22,41 @@
       </div>
     </nav>
     <!--jumbotron-->
-    <div class="jumbotron dancer" role="presentation">
+    <div class="jumbotron dancer-jumbo" role="presentation">
       <div class="container-fluid">
         <h1>move your body and soul</h1>
-        <p class="jumbo-paragraph">Lorem dipsem dolor sit amet, consecture  adipiscing elit. Aliquam et risus nisis. Marius euismod orci laoreet. Donec eu rhoncus orci, ut rhoncus nibh. Phasellus effictur veneratis nibh.</p>
-        <div class="btn btn-default btn-lg">
-          Buy A Course Card
+        <div class="row">
+          <div class="col-md-5">
+          </div>
+          <div class="col-md-5">
+            <p class="jumbo-paragraph">Lorem dipsem dolor sit amet, consecture  adipiscing elit. Aliquam et risus nisis. Marius euismod orci laoreet. Donec eu rhoncus orci, ut rhoncus nibh. Phasellus effictur veneratis nibh.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+          </div>
+          <div class="btn btn-default btn-lg">
+            Buy A Course Card
+          </div>
         </div>
       </div>
     </div>
     <!--main-->
-    <div class="graffiti" role="presentation">
+    <div class="graffiti main-banner" role="presentation">
       <div class="backdrop1">
         <h2 class="main-h2">Lorem ipsum dolor sit amet</h2>
         <p class="paragraph">Lorem dipsem dolor sit amet, consecture  adipiscing elit. Aliquam et risus nisis. Marius euismod orci laoreet. Donec eu rhoncus orci, ut rhoncus nibh. Phasellus effictur veneratis nibh.</p>
         <strong>Read more on the blog</strong>
       </div>
     </div>
-    <div class="fire" role="presentation">
+    <div class="fire main-banner" role="presentation">
       <div class="backdrop2">
         <h2 class="main-h2">Lorem ipsum dolor sit amet</h2>
         <p class="paragraph">Lorem ipsum dolor sit amet, consectur adspicing elit. Cras a felis ullamcorper, placerat orci eu, lorbotis orci. Nullam pretium vehicula counge</p>
         <strong>Read more on the blog</strong>
       </div>
     </div>
-    <div class="jump" role="presentation">
+    <div class="jump main-banner" role="presentation">
       <div class="backdrop1">
         <h2 class="main-h2">Lorem ipsum dolor sit amet</h2>
         <p class="paragraph">Lorem ipsum dolor sit amet, consectur adspicing elit. Cras a felis ullamcorper, placerat orci eu, lorbotis orci. Nullam pretium vehicula counge</p>
@@ -57,23 +68,25 @@
       <div class="social-media">
         <div  class="row">
           <div class=col-md-4>
-            <img src="resources/pyt_dance_studio_resources/logo-color.png" class="footer-img"/>
+            <img src="resources/pyt_dance_studio_resources/logo-color.png" class="footer-img" />
           </div>
           <div class="col-md-4 icon">
-            <i class="fa fa-facebook fa-2x fa-1x"></i>
-            <i class="fa fa-twitter fa-2x fa-1x"></i>
-            <i class="fa fa-instagram fa-2x fa-1x"></i>
+            <a href="#"><i class="fa fa-facebook fa-2x" aria-label="facebook f icon"></i></a>
+            <a href="#"><i class="fa fa-twitter fa-2x" aria-label="twitter bird icon"></i></a>
+            <a href="#"><i class="fa fa-instagram fa-2x" aria-label="instagram i icon"></i></a>
           </div>
           <div class="col-md-3">
             <h5>Contact us | Terms & Conditions</h5>
           </div>
         </div>
       </div>
-        <div class="copyright">
-      <div>
-        <p>PYT Dance Studio | 14 Bridge Street, New York, NY 10101 | 212.867.5309 |contact@pytdance.com</p>
-        <p>All Rights Reserved. 2016 PYT Dance Studio</p>
-      </div>
+      <div class="copyright row">
+        <div class="col-md-5">
+        </div>
+        <div class="col-md-6">
+          <p>PYT Dance Studio | 14 Bridge Street, New York, NY 10101 | 212.867.5309 |contact@pytdance.com</p>
+          <p>All Rights Reserved. 2016 PYT Dance Studio</p>
+        </div>
       </div>
     </footer>
   </body>

@@ -3,7 +3,7 @@
 html {
   font-size: 16px;
   margin-top: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /*navigation*/
@@ -36,6 +36,10 @@ ul a {
 }
 
 @media only screen and (max-width: 480px) {
+  .navbar {
+    height: 2.5rem;
+  }
+
   nav img {
     display: none;
   }
@@ -47,16 +51,17 @@ ul a {
 }
 
 /*jumbotron*/
-.dancer {
+.dancer-jumbo {
   background-image: url('../../resources/pyt_dance_studio_resources/dancers-photo.png');
   background-position: center;
   background-size: cover;
-  text-align: center;
+  /*text-align: center;*/
   font-family: 'Roboto', sans-serif;
+  margin-top: 50px;
   margin-bottom: 0;
 }
 
-.dancer h1 {
+.dancer-jumbo h1 {
   margin-top: 9.4375rem;
   margin-bottom: 2.6875rem;
   text-transform: uppercase;
@@ -68,15 +73,17 @@ ul a {
   text-align: center;
 }
 
-.dancer p {
+.dancer-jumbo p {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 5rem;
+  text-align: center;
+  margin-right: 50rem;
 }
 
 
-.dancer .btn {
+.dancer-jumbo .btn {
   border-radius: 2px;
   background-color: #f5a623;
   font-family: 'Open Sans', sans-serif;
@@ -87,7 +94,13 @@ ul a {
   margin-bottom: 3.125rem;
 }
 
-@media only screen and (max-width: 780px) {
+
+@media only screen and (max-width: 890px) {
+  .main-banner {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
   h1 {
     width: 31.25rem;
   }
@@ -96,7 +109,7 @@ ul a {
 @media only screen and (max-width: 480px) {
   h1 {
     width: 18.5rem;
-    margin-top: 7.125rem;
+  margin-top: 7.125rem;
     margin-bottom: 1.625rem;
     font-size: 1.875rem;
   }
@@ -105,6 +118,7 @@ ul a {
     margin-bottom: 3.875rem;
     font-size: 1rem;
     line-height: 1.6;
+    text-align: center;
   }
 }
 
@@ -185,7 +199,7 @@ ul a {
   line-height: 1.4;
 }
 /*mobile*/
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 890px) {
   .main-h2{
     font-size: 1.875rem;
     line-height: 1.4;
@@ -231,52 +245,6 @@ ul a {
 
 }
 
-/*footer index*/
-footer {
-  /*background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');*/
-  height: 3.125rem;
-  width: auto;
-  background-color: rgba(120, 73, 227, 0.9);
-  color:#ffffff;
-  font-size: .875rem;
-}
-
-.social-media {
-  /*text-align: center;*/
-  height: 3.125rem;
-}
-
-footer .copyright {
-  text-align: center;
-  font-size: .875rem;
-  letter-spacing: 0.7px;
-  color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: bold;
-  height: 15rem;
-  width: auto;
-  /*background-color: rgba(120,73,227, 0.9)*/
-  background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');
-}
-
-.icon {
-  /*width: 9.375rem;*/
-}
-
-@media only screen and (max-width: 780) {
-  .social-media {
-    height: 2.5rem;
-  }
-
-  .copyright {
-    height: 8.75rem;
-  }
-
-  .footer-image {
-    display: none;
-  }
-}
-
 /*faculty page*/
 /*jumbotron*/
 .faculty-jumbo {
@@ -284,10 +252,12 @@ footer .copyright {
   background-position: center;
   background-size: cover;
   text-align: center;
+  margin-top: 50px;
 }
 
 .faculty-jumbo h1 {
   margin-top: 9rem;
+  color: #8a45ff;
 }
 
 .faculty-jumbo p {
@@ -346,10 +316,12 @@ footer .copyright {
   background-size: cover;
   text-align: right;
   border-bottom: 1rem solid rgba(174, 75, 227, 0.9);
+  margin-top: 50px;
 }
 
 .classes-jumbo h1 {
   color: rgba(174, 75, 227, 0.9);
+  text-align: center;
 }
 
 /*classes*/
@@ -364,41 +336,123 @@ footer .copyright {
   background-position: center;
   background-size: cover;
   border-bottom: 10px solid #794ae2;
+  margin-top: 50px;
 }
 
 .about-jumbo h1 {
   font-weight: bold;
   font-size: 3.125rem;
   color: #794ae2;
+  text-align: center;
 }
+
 
 /*about section*/
 .about {
   text-align: center;
 }
 
-.about h2 {
+.about-div{
+  display: flex;
+  align-items: center;
+}
+
+
+.gray {
+  justify-content: center;
+  padding: 4rem 19%;
+  background-color: #f2f2f2;
+}
+
+.gray .about-img {
+  height: 9.375rem;
+  margin-right: 5rem;
+  .margin-bottom: 1rem;
+  height: 6.25rem;
+}
+
+.gray .about-text {
+  flex-direction: column;
+  text-align: center;
+}
+
+.gray .about-text h2 {
   font-size: 2.25rem;
   font-weight: bold;
   color: #794ae2;
-  margin-top: 4rem;
+  margin-bottom: 1rem;
 }
 
-.about img {
-  height: 9.375rem;
-  margin-right: 5rem;
-}
-
-.about p {
+.gray .about-text p {
   font-size: 1.5rem;
   line-height: 1.5;
   color: #666666;
-  margin-bottom: 4rem;
 }
+
+.white {
+  background-color: #ffffff;
+  justify-content: center;
+  padding: 4rem 19%;
+}
+
+.white .about-text {
+  flex-direction: column;
+  margin-right: 5rem;
+  text-align: center;
+}
+
+.white .about-text h2 {
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: #794ae2;
+  margin-bottom: 1rem;
+}
+
+.white .about-text p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #666666;
+}
+
+.clock-heart {
+  padding-bottom: 2rem;
+}
+
+@media only screen and (max-width: 8900px) {
+  .about img {
+    margin-top: 1.875rem;
+  }
+
+  .about h2 {
+    font-size: 1.75rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.875rem;
+  }
+
+  .about img {
+    height: 6.25rem;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+
+}
+
+@media only screen and (max-width: 480px) {
+
+}
+
 
 /*map*/
 .map {
   background-image: url('../../resources/pyt_dance_studio_resources/map.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 31.25rem;
   width: auto;
   padding-top: 3.875rem;
@@ -409,7 +463,94 @@ footer .copyright {
 
 .directions {
   background-color: rgba(120, 73, 225, 0.9);
-  height: 25rem;
+  height: 20rem;
   width: 25rem;
   text-align: left;
+  color: #ffffff;
+  margin: 3rem 3rem 4rem 3rem;
+}
+
+.directions p {
+  font-size: 1rem;
+  line-height: 1.3;
+}
+
+.directions p:first-of-type {
+  margin-bottom: 0;
+}
+
+.directions p a {
+  font-weight: normal;
+}
+
+.directions h2 {
+  margin-top: 1rem;
+}
+
+/*footer*/
+footer{
+  height: 3.125rem;
+  width: auto;
+  background-color: rgba(120, 73, 227, 0.9);
+  color:#ffffff;
+  font-size: .875rem;
+}
+
+footer .social-media {
+  /*text-align: center;*/
+  height: 3.125rem;
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: .875rem;
+  letter-spacing: 0.7px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  height: 15rem;
+  width: auto;
+  background-color: rgba(0, 0 ,0, 0.4);
+  background-image: url('../../resources/pyt_dance_studio_resources/party-photo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.icon a {
+  /*width: 9.375rem;*/
+  color: #ffffff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 890px) {
+  .social-media {
+    height: 2.5rem;
+    text-align: center;
+  }
+
+  .copyright {
+    height: 8.75rem;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  footer img, h5 {
+    display: none;
+  }
+
+
+  .icon {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  footer img, h5 {
+    display: none;
+  }
+
+  .icon {
+    text-align: center;
+  }
 }
