@@ -418,7 +418,7 @@ ul a {
   padding-bottom: 2rem;
 }
 
-@media only screen and (max-width: 8900px) {
+@media only screen and (max-width: 890px) {
   .about img {
     margin-top: 1.875rem;
   }
@@ -486,6 +486,19 @@ ul a {
 .directions h2 {
   margin-top: 1rem;
 }
+
+@media only screen and (max-width: 890px) {
+  .directions {
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .directions {
+    justify-content: flex-end;
+  }
+}
+
 
 /*footer*/
 footer{
